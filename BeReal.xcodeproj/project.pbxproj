@@ -64,7 +64,6 @@
 				A2C519033CB3BDFE3F802DE5 /* Pods-BeReal.debug.xcconfig */,
 				BC4838F81F85036E7B99D67A /* Pods-BeReal.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -432,7 +431,7 @@
 				DEVELOPMENT_TEAM = FW5BACSZ6A;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BeReal/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Be Real";
+				INFOPLIST_KEY_CFBundleDisplayName = BeReal;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -463,7 +462,7 @@
 				DEVELOPMENT_TEAM = FW5BACSZ6A;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BeReal/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Be Real";
+				INFOPLIST_KEY_CFBundleDisplayName = BeReal;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
