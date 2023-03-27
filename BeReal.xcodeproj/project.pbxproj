@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		336122E3A3F7B1D8848FB7B3 /* Pods_BeReal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AF8F3771608DD1B3A9E79CF /* Pods_BeReal.framework */; };
 		B78A73F829D1E0520007B250 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78A73F729D1E0520007B250 /* AppDelegate.swift */; };
 		B78A73FA29D1E0520007B250 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78A73F929D1E0520007B250 /* SceneDelegate.swift */; };
 		B78A73FC29D1E0520007B250 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78A73FB29D1E0520007B250 /* ViewController.swift */; };
@@ -24,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5AF8F3771608DD1B3A9E79CF /* Pods_BeReal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeReal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2C519033CB3BDFE3F802DE5 /* Pods-BeReal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeReal.debug.xcconfig"; path = "Target Support Files/Pods-BeReal/Pods-BeReal.debug.xcconfig"; sourceTree = "<group>"; };
 		B78A73F429D1E0520007B250 /* BeReal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeReal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B78A73F729D1E0520007B250 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B78A73F929D1E0520007B250 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +43,7 @@
 		B78A741829D1E1950007B250 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		B78A741B29D1E1C60007B250 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		B78A741E29D1E20F0007B250 /* DateFormatter+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extensions.swift"; sourceTree = "<group>"; };
+		BC4838F81F85036E7B99D67A /* Pods-BeReal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeReal.release.xcconfig"; path = "Target Support Files/Pods-BeReal/Pods-BeReal.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,17 +51,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				336122E3A3F7B1D8848FB7B3 /* Pods_BeReal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		159B5F1F9E883E1DCB4AB943 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A2C519033CB3BDFE3F802DE5 /* Pods-BeReal.debug.xcconfig */,
+				BC4838F81F85036E7B99D67A /* Pods-BeReal.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B78A73EB29D1E0520007B250 = {
 			isa = PBXGroup;
 			children = (
 				B78A73F629D1E0520007B250 /* BeReal */,
 				B78A73F529D1E0520007B250 /* Products */,
+				159B5F1F9E883E1DCB4AB943 /* Pods */,
+				C8A9538A487A0E7919C492BE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,6 +148,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		C8A9538A487A0E7919C492BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5AF8F3771608DD1B3A9E79CF /* Pods_BeReal.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,9 +163,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B78A740829D1E0530007B250 /* Build configuration list for PBXNativeTarget "BeReal" */;
 			buildPhases = (
+				F19D71E92E4AA96E555DF198 /* [CP] Check Pods Manifest.lock */,
 				B78A73F029D1E0520007B250 /* Sources */,
 				B78A73F129D1E0520007B250 /* Frameworks */,
 				B78A73F229D1E0520007B250 /* Resources */,
+				66EF43CCAD794C56A4A945E7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -196,6 +223,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		66EF43CCAD794C56A4A945E7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BeReal/Pods-BeReal-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BeReal/Pods-BeReal-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BeReal/Pods-BeReal-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F19D71E92E4AA96E555DF198 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BeReal-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B78A73F029D1E0520007B250 /* Sources */ = {
@@ -354,6 +423,7 @@
 		};
 		B78A740929D1E0530007B250 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2C519033CB3BDFE3F802DE5 /* Pods-BeReal.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -384,6 +454,7 @@
 		};
 		B78A740A29D1E0530007B250 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC4838F81F85036E7B99D67A /* Pods-BeReal.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
