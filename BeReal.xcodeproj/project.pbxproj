@@ -13,6 +13,14 @@
 		B78A73FF29D1E0520007B250 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B78A73FD29D1E0520007B250 /* Main.storyboard */; };
 		B78A740129D1E0530007B250 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B78A740029D1E0530007B250 /* Assets.xcassets */; };
 		B78A740429D1E0530007B250 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B78A740229D1E0530007B250 /* LaunchScreen.storyboard */; };
+		B78A740D29D1E0880007B250 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78A740C29D1E0880007B250 /* User.swift */; };
+		B78A740F29D1E0920007B250 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78A740E29D1E0920007B250 /* Post.swift */; };
+		B78A741229D1E11B0007B250 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78A741129D1E11B0007B250 /* LoginViewController.swift */; };
+		B78A741429D1E1470007B250 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78A741329D1E1470007B250 /* SignUpViewController.swift */; };
+		B78A741629D1E1670007B250 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78A741529D1E1670007B250 /* FeedViewController.swift */; };
+		B78A741929D1E1950007B250 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78A741829D1E1950007B250 /* PostCell.swift */; };
+		B78A741C29D1E1C60007B250 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78A741B29D1E1C60007B250 /* PostViewController.swift */; };
+		B78A741F29D1E20F0007B250 /* DateFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78A741E29D1E20F0007B250 /* DateFormatter+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		B78A740029D1E0530007B250 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B78A740329D1E0530007B250 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B78A740529D1E0530007B250 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B78A740C29D1E0880007B250 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B78A740E29D1E0920007B250 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		B78A741129D1E11B0007B250 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B78A741329D1E1470007B250 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		B78A741529D1E1670007B250 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		B78A741829D1E1950007B250 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		B78A741B29D1E1C60007B250 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		B78A741E29D1E20F0007B250 /* DateFormatter+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,11 @@
 		B78A73F629D1E0520007B250 /* BeReal */ = {
 			isa = PBXGroup;
 			children = (
+				B78A741D29D1E1D90007B250 /* Extensions */,
+				B78A741A29D1E1AA0007B250 /* Post */,
+				B78A741729D1E16C0007B250 /* Feed */,
+				B78A741029D1E0E60007B250 /* Login */,
+				B78A740B29D1E0760007B250 /* Models */,
 				B78A73F729D1E0520007B250 /* AppDelegate.swift */,
 				B78A73F929D1E0520007B250 /* SceneDelegate.swift */,
 				B78A73FB29D1E0520007B250 /* ViewController.swift */,
@@ -65,6 +86,49 @@
 				B78A740529D1E0530007B250 /* Info.plist */,
 			);
 			path = BeReal;
+			sourceTree = "<group>";
+		};
+		B78A740B29D1E0760007B250 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B78A740C29D1E0880007B250 /* User.swift */,
+				B78A740E29D1E0920007B250 /* Post.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B78A741029D1E0E60007B250 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B78A741129D1E11B0007B250 /* LoginViewController.swift */,
+				B78A741329D1E1470007B250 /* SignUpViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		B78A741729D1E16C0007B250 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				B78A741529D1E1670007B250 /* FeedViewController.swift */,
+				B78A741829D1E1950007B250 /* PostCell.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		B78A741A29D1E1AA0007B250 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				B78A741B29D1E1C60007B250 /* PostViewController.swift */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
+		B78A741D29D1E1D90007B250 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B78A741E29D1E20F0007B250 /* DateFormatter+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +202,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B78A741229D1E11B0007B250 /* LoginViewController.swift in Sources */,
+				B78A741429D1E1470007B250 /* SignUpViewController.swift in Sources */,
+				B78A740D29D1E0880007B250 /* User.swift in Sources */,
 				B78A73FC29D1E0520007B250 /* ViewController.swift in Sources */,
+				B78A741C29D1E1C60007B250 /* PostViewController.swift in Sources */,
 				B78A73F829D1E0520007B250 /* AppDelegate.swift in Sources */,
+				B78A741929D1E1950007B250 /* PostCell.swift in Sources */,
 				B78A73FA29D1E0520007B250 /* SceneDelegate.swift in Sources */,
+				B78A741629D1E1670007B250 /* FeedViewController.swift in Sources */,
+				B78A741F29D1E20F0007B250 /* DateFormatter+Extensions.swift in Sources */,
+				B78A740F29D1E0920007B250 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,11 +362,13 @@
 				DEVELOPMENT_TEAM = FW5BACSZ6A;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BeReal/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Be Real";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -318,11 +392,13 @@
 				DEVELOPMENT_TEAM = FW5BACSZ6A;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BeReal/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Be Real";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
