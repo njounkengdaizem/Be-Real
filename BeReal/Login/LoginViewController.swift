@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import ParseSwift
 
 // TODO: Pt 1 - Import Parse Swift
 
@@ -31,7 +32,27 @@ class LoginViewController: UIViewController {
             return
         }
 
-        // TODO: Pt 1 - Log in the parse user
+        // Log in the parse user
+        User.login(username: username, password: password) { [weak self] result in
+
+            switch result {
+            case .success(let user):
+                print("✅ Successfully logged in as user: \(user)")
+
+                // Post a notification that the user has successfully logged in.
+                NotificationCenter.default.post(name: Notification.Name("login"), object: nil)
+                
+                // Load the feed view controller
+                   let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                   guard let feedVC = storyboard.instantiateViewController(withIdentifier: "FeedViewController") as? FeedViewController else {
+                       fatalError("Unable to instantiate feed view controller")
+                   }
+                   self?.navigationController?.pushViewController(feedVC, animated: true)
+
+            case .failure(let error):
+                self?.showAlert(description: error.localizedDescription)
+            }
+        }
 
     }
 
