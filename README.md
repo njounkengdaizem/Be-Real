@@ -4,37 +4,27 @@ Submitted by: **Daize Njounkeng**
 
 **Name of your app** is an app that ... [TODO] 
 
-Time spent: **7** hours spent in total
+Time spent: **2** hours spent in total
 
 ## Required Features
 
 The following **required** functionality is completed:
 
-- [X] User can register a new account
-- [X] User can log in with newly created account
-- [X] App has a feed of posts when user logs in
-- [X] User can upload a new post which takes in a picture from photo library and a caption	
+- [X] User can launch camera to take photo instead of photo library
+- [X] User session persists when application is closed and relaunched
+- [X] Users are able to log out and return to sign in page
+- [X] Users are NOT able to see other photos until they upload their own	
  
-The following **optional** features are implemented:
-
-- [ ] Users can pull to refresh their feed and see a loading indicator
-- [X] Users can infinite-scroll in their feed to see past the 10 most recent photos
-- [X] Users can see time of photo upload in the feed	
-- [X] User is able to logout
-- [X] User stays logged in when app is closed and open again	
-
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
 
-https://user-images.githubusercontent.com/89226977/228127284-7586db71-7ec3-4ba4-b770-d93dc1de2d3a.mp4
-
+https://user-images.githubusercontent.com/89226977/229678330-dea66eb8-b735-4d98-92f7-e4d9233f369b.mp4
 
 
 ## Notes
 
-Describe any challenges encountered while building the app.
 
 ## License
 
